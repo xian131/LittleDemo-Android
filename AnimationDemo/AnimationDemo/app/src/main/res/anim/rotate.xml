@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Rotate旋转动画 duration动画时间1s
+   fromDegrees,toDegrees起始和终止的角度
+   pivotX,pivotY相对于x,y开始的位置
+   interpolator动画插入器 -->
+    <rotate
+        android:duration="1000"
+        android:fromDegrees="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="+360"/>
+    <!--accelerate_decelerate_interpolator先加速后减速-->
+</set>

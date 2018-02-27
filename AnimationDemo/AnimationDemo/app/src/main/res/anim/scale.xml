@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Scale缩放动画 duration动画时间2s
+    fromX,toX起始和结束时x上的伸缩尺寸 fromY,toY起始和结束时y上的伸缩尺寸
+    pivotX,pivotY相对于x,y开始的位置
+    interpolator动画插入器-->
+    <scale
+        android:duration="2000"
+        android:fillAfter="false"
+        android:fromXScale="0.0"
+        android:fromYScale="0.0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0"/>
+    <!--accelerate_decelerate_interpolator先加速后减速-->
+</set>

@@ -1,0 +1,42 @@
+四种基本动画：
+    Scale缩放动画
+        <!--Scale缩放动画 duration动画时间2s
+            fromX,toX起始和结束时x上的伸缩尺寸 fromY,toY起始和结束时y上的伸缩尺寸
+            pivotX,pivotY相对于x,y开始的位置
+            interpolator动画插入器-->
+    Alpha透明度动画
+         <!--Alpha透明度动画 duration动画时间1s fromAlpha,toAlpha透明度从10%~100%-->
+    Rotate旋转动画
+        <!--Rotate旋转动画 duration动画时间1s
+           fromDegrees,toDegrees起始和终止的角度
+           pivotX,pivotY相对于x,y开始的位置
+           interpolator动画插入器 -->
+    Translate位移动画
+         <!--Translate位移动画 duration动画时间1s
+            fromXDelta,fromYDelta起始x,y
+            toXDelta,toYDelta结束x,y -->
+动画组合：
+    Translate位移动画+Rotate旋转动画
+        setAnimationListener//动画监听器
+    Alpha+Alpha
+        startOffset设置3s后执行
+    Alpha闪烁(java实现)
+        AlphaAnimation alphaAnimation = new AlphaAnimation(0.1f, 1.0f);
+        alphaAnimation.setDuration(100);//持续时间
+        alphaAnimation.setRepeatCount(10);//重复次数10次
+        alphaAnimation.setRepeatMode(Animation.REVERSE);//倒序重复REVERSE 正序重复RESTART
+        image.startAnimation(alphaAnimation);
+    Activity切换动画
+        overridePendingTransition(R.anim.zoom_in, R.anim.zoom_out);
+    LayoutAnimation布局动画
+        LayoutAnimationController lac = new LayoutAnimationController(AnimationUtils.loadAnimation(this, R.anim.zoom_in));//布局动画控制器
+        lac.setOrder(LayoutAnimationController.ORDER_NORMAL);//ORDER_RANDOM随机顺序 ORDER_NORMAL正序
+        mListView.setLayoutAnimation(lac);//加载布局动画
+        mListView.startLayoutAnimation();//启动布局动画
+    FrameAnimation逐帧动画
+        image.setImageResource(R.drawable.anim_list);
+        AnimationDrawable ad = (AnimationDrawable) image.getDrawable();//帧动画对象
+        ad.start();
+
+
+
