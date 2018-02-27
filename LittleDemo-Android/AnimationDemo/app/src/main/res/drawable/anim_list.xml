@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@android:drawable/ic_menu_camera"
+        android:duration="500"/>
+    <item
+        android:drawable="@android:drawable/ic_menu_week"
+        android:duration="500"/>
+    <item
+        android:drawable="@android:drawable/ic_menu_day"
+        android:duration="500"/>
+    <item
+        android:drawable="@android:drawable/ic_menu_call"
+        android:duration="500"/>
+    <item
+        android:drawable="@android:drawable/ic_menu_add"
+        android:duration="500"/>
+</animation-list>

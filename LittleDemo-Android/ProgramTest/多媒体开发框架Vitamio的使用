@@ -1,0 +1,11 @@
+Vitamio 能够流畅播放720P甚至1080P高清MKV，FLV，MP4，MOV，TS，RMVB等常见格式的视频
+可以在 Android 与 iOS 上跨平台支持 MMS, RTSP, RTMP, HLS(m3u8) 等常见的多种视频流媒体协议，包括点播与直播
+
+该项目使用多媒体开发框架Vitamio，通过m3u8协议实现直播
+直播源来自高清苑论坛，通过VLC软件测试直播源
+
+学习内容：
+string-array的使用
+Vitamio多媒体框架的引用
+主线程Handler的延迟操作
+自定义drawble的使用，这里是progressbar
